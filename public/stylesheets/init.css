@@ -1,0 +1,54 @@
+        body
+        {
+            margin: 0;
+            overflow: hidden;
+            background: #E9E9E9;
+        }
+        
+        #Circle
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            width: 150px;
+            height: 150px;
+            border-radius: 150px;
+            background: url('../images/binwdao1.jpg');
+        }
+        
+        #Circle:before
+        {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: -8px;
+            width: 162px;
+            height: 162px;
+            border-radius: 162px;
+            border: 2px solid #BCBCBC;
+        }
+        
+        #Circle:after
+        {
+            content: '';
+            position: absolute;
+            top: -13px;
+            left: -13px;
+            width: 172px;
+            height: 172px;
+            border-radius: 172px;
+            border: 2px solid #FF9900;
+        }
+        
+        #Circle span
+        {
+            position: absolute;
+            bottom: -60px;
+            display: block;
+            width: 150px;
+            text-align: center;
+            font-family: 'Oswald';
+            color: #333;
+            font-size: 25px;
+        }
