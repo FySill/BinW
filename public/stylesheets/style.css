@@ -16,7 +16,6 @@ a {
   height: 460px;
   width: 480px;
 }
-
 .avatar {
   position: absolute;
   top: 0;
@@ -265,67 +264,61 @@ a {
           animation: bounce 3s 4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, colorchange 1s 4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
 
-.image {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  height: 220px;
-  width: 220px;
+ body
+{
+      margin: 0;
+      overflow: hidden;
+      background: #E9E9E9;
 }
-.image img {
-  position: relative;
-  height: 220px;
-  width: 220px;
-  border-radius: 50%;
-  z-index: 1;
+        
+.Circle
+{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      width: 150px;
+      height: 150px;
+      border-radius: 150px;
+      background: url('../images/binwdao1.jpg');
 }
-.stage.show .image:before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  content: '';
-  height: 100%;
-  width: 100%;
-  background: #f9fff7;
-  border: 3px solid #e7f5d1;
-  border-radius: 50%;
-  -webkit-animation: pulse 1s 1.4s ease-out;
-          animation: pulse 1s 1.4s ease-out;
-  -webkit-animation-iteration-count: 3;
-          animation-iteration-count: 3;
+        
+.Circle:before
+{
+      content: '';
+      position: absolute;
+      top: -8px;
+      left: -8px;
+      width: 162px;
+      height: 162px;
+      border-radius: 162px;
+      border: 2px solid #BCBCBC;
 }
-.image .smiley {
-  position: absolute;
-  top: -8px;
-  right: -8px;
-  height: 64px;
-  width: 64px;
-  background: #b5e763;
-  border-radius: 50%;
-  border: 5px solid white;
-  -webkit-animation: bounce 5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-          animation: bounce 5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-  -webkit-transform-origin: center;
-      -ms-transform-origin: center;
-          transform-origin: center;
-  z-index: 1;
+        
+.Circle:after
+{
+      content: '';
+      position: absolute;
+      top: -13px;
+      left: -13px;
+      width: 172px;
+      height: 172px;
+      border-radius: 172px;
+      border: 2px solid #FF9900;
 }
-.image .smiley svg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  -webkit-animation: bounce 5s 0.075s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-          animation: bounce 5s 0.075s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        
+.Circle span
+{
+      position: absolute;
+      bottom: -60px;
+      display: block;
+      width: 150px;
+      text-align: center;
+      font-family: 'Oswald';
+      color: #333;
+      font-size: 25px;
 }
+
 
 @-webkit-keyframes bounce {
   0% {
@@ -403,33 +396,33 @@ a {
   }
 }
 .avatar:nth-of-type(1) {
-  background-image: url("128.jpg");
+  background-image: url('../images/binwdao1.jpg');
 }
 
 .avatar:nth-of-type(2) {
-  background-image: url("rasagy.jpg");
+  background-image: url('../images/binwdao1.jpg');
 }
 
 .avatar:nth-of-type(3) {
-  background-image: url("geeftvorm.jpg");
+  background-image: url('../images/binwdao1.jpg');
 }
 
 .avatar:nth-of-type(4) {
-  background-image: url("VinThomas.jpg");
+  background-image: url('../images/binwdao1.jpg');
 }
 
 .avatar:nth-of-type(5) {
-  background-image: url("ladylexy.jpg");
+  background-image: url('../images/binwdao1.jpg');
 }
 
 .avatar:nth-of-type(6) {
-  background-image: url("claudioguglieri.jpg");
+  background-image: url('../images/binwdao1.jpg');
 }
 
 .avatar:nth-of-type(7) {
-  background-image: url("jina.jpg");
+  background-image: url('../images/binwdao1.jpg');
 }
 
 .avatar:nth-of-type(8) {
-  background-image: url("peterme.jpg");
+  background-image: url('../images/binwdao1.jpg');
 }
